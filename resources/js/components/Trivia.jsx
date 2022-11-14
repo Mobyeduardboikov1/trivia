@@ -17,7 +17,6 @@ class Trivia extends React.Component {
     componentDidMount() {
         axios.get('/api/questions')
         .then(res => {
-            console.log('data', res);
             const questions = res.data;
             this.setState({ questions, currentIndex: questions.length ? 0 : null  });
         })
@@ -50,7 +49,6 @@ class Trivia extends React.Component {
 
     render() {
         const { questions, currentIndex, gameFinished } = this.state;
-        console.log('questions', questions, currentIndex);
         let question = questions.length && questions[currentIndex] ? questions[currentIndex] : null;
         let totalCorrect = null;
         let isDisabled = false;
