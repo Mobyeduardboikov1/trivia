@@ -2,6 +2,8 @@
 
 <h2>Installation</h2>
 <p>PHP 8.0 is used</p>
+<p>Backend is based on Laravel 9, and is used as an API</p>
+<p>Front-end is using React 17</p>
 <ul>
   <li>Clone the repo</li>
   <li>run `composer update` and `composer install`</li>
