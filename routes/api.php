@@ -2,8 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\QuestionsConroller;
-
+use App\Http\Controllers\QuestionsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,4 +15,4 @@ use App\Http\Controllers\QuestionsConroller;
 */
 
 
-Route::get('/questions', [QuestionsConroller::class, 'index']);
+Route::get('/questions', [QuestionsController::class, 'index']);
